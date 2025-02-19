@@ -30,7 +30,7 @@ spec:
             - --initial-advertise-peer-urls=http://$(HOSTNAME):2380
             - --initial-cluster-state=new
             - --initial-cluster-token=etcd-0
-            - --initial-cluster=etcd-0=http://etcd-0.etcd:2380
+            - --initial-cluster=etcd-0=http://etcd-0:2380
           volumeMounts:
             - name: etcd-data
               mountPath: /etcd-data
